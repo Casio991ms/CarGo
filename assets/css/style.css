@@ -1,0 +1,16 @@
+#text-in-left{
+    width: 35%;
+    position: relative;
+    top: 35%;
+}
+
+.home-top{
+    background-image: url(../images/Home-Top.jpg);
+    background-size: 100% auto;
+    height: 500px;
+}
+
+.one-platform, .bottomCarousel{
+    background-color: #0C71C3;
+}
+
