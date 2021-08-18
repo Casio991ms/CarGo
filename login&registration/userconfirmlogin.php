@@ -50,7 +50,7 @@ if(isset($_POST['submit1']))
    if($rowcount==1)
    {
    	 $_SESSION['login']=true;
-   	 header("Location: ../index.php?userid=".$userid);
+   	 header("Location: ../menupage.php");
    }
    else
    {

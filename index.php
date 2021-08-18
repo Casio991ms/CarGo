@@ -16,7 +16,110 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/59ad435b01.js" crossorigin="anonymous"></script>
+    <style>
+
+.icons
+{
+    position: fixed;
+    top: 30%;
+    left: 0%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.icons a
+{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    font-family:'oswald',sans-serif;
+    margin: 2px;
+    text-align: right;
+    border-radius: 0px 50px 50px 0px;
+    transform: translate(-140px, 0px);
+    transition: all 1.0s;
+}
+.icons a:hover
+{
+    transform: translate(0px, 0px);
+    box-shadow: 0 0 12px rgb(109, 109, 109);
+
+}
+.icons a i
+{
+    margin-left: 25px;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 1.0s;
+}
+.icons a:hover i
+{
+    transform: rotate(360deg);
+}
+.icons a i.fa-facebook-f
+{
+    color: #2C80D3;
+    size: 5px;
+}
+.icons a i.fa-twitter
+{
+    color: #53c5ff;
+}
+.icons a i.fa-instagram
+{
+    color: #ea4c89;
+
+}
+.icons a i.fa-linkedin
+{
+    color: #0077B5;
+}
+.icons a i.fa-whatsapp
+{
+    color: #25D366;
+}
+.icons a i.fa-youtube
+{
+    color: #fa0910;
+}
+.facebook
+{
+    background-color: #2C80D3;
+    color: #fff;
+}
+.twitter
+{
+    background-color: #53c5ff;
+    color: white;
+}
+.instagram
+{
+    background-color: #ea4c89;
+    color: white;
+}
+.linkedin
+{
+    background-color: #0077B5;
+    color: white;
+}
+.whatsapp
+{
+    background-color: #25D366;
+    color: white;
+}
+.youtube
+{
+    background-color: #fa0910;
+    color: white;
+}
+</style>
 </head>
+
 <body >
 
   <!-- Topbar -->
@@ -77,12 +180,19 @@
 
   <div class="home-top mb-5">
     <div id="text-in-left" class="text-center">
-      <h2 class="text-white">AUTOMATE THE MANAGEMENT OF YOUR FLEET</h2>
+      <h2 class="text-white m-5">AUTOMATE THE MANAGEMENT OF YOUR FLEET</h2>
       <button type="button" class="btn btn-light w-25 p-2 mx-4">Download</button>
       <button type="button" class="btn btn-primary w-25 p-2 mx-4">Use Now</button>
     </div>
   </div>
-
+<div class="icons">
+         <a href=""class="facebook"><span class="text-light">Facebook</span><i class="fab fa-facebook-f"></i></a>
+         <a href="" class="twitter">Twitter<i class="fa fa-twitter"></i></a>
+         <a href="" class="instagram">Instagram<i class="fa fa-instagram"></i></a>
+         <a href="" class="linkedin"><span class="text-light">LinkedIn</span><i class="fa fa-linkedin"></i></a>
+         <a href="" class="whatsapp">WhatsApp<i class="fa fa-whatsapp"></i></a>
+         <a href="" class="youtube">Youtube<i class="fa fa-youtube"></i></a>
+      </div>
 
   <!-- Features -->
   <div class="container-lg text-center features mb-5">
