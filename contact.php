@@ -85,22 +85,22 @@ label{
     <div class="collapse navbar-collapse col-lg-5" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html"><i class="fas fa-home px-1"></i>Home</a>
+          <a class="nav-link" href="index.php"><i class="fas fa-home px-1"></i>Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"><i class="fas fa-tags px-1"></i></i>Pricing</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#cat"><i class="fas fa-users px-1"></i>About
-                </a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link" href="#"><i class="far fa-life-ring px-1"></i>Support</a>
+         <a class="nav-link" href="./support.php"><i class="far fa-life-ring px-1"></i>Support</a>
         </li>
 
         <li class="nav-item">
-         <a class="nav-link" href="#"><i class="fas fa-phone-alt px-1"></i>Contact Us</a>
+          <a class="nav-link" href="./about.php"><i class="fas fa-users px-1"></i>About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="./contact.php"><i class="fas fa-phone-alt px-1"></i>Contact Us</a>
         </li>
 
         
@@ -127,7 +127,7 @@ label{
       <button type="button" class="btn btn-info w-25 p-2 mx-4" style="font-size:1.8rem; border-radius:30px;">Contact us</button>
       
     </div>
-  </div>
+</div>
 
     <div class="content_parallax_over_image big_banner">
     </div><br><br><br>
@@ -142,11 +142,11 @@ label{
             <p>Board Bazar,Gazipur</p>
             <p>Bangladesh</p>
         </div>
-          <div class="col-lg-6">
-            <!--Google map-->
-                <div id="map-container" class="z-depth-1-half map-container mb-5" style="height: 400px"></div>
-</div>
-</div>
+        <div class="col-lg-6">
+          <!--Google map-->
+              <div id="map-container" class="z-depth-1-half map-container mb-5" style="height: 400px"></div>
+        </div>
+    </div>
 <br><br>
 
 <div class="row">
@@ -221,7 +221,7 @@ label{
           <h3 class="text-white">CarGo</h3>
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Home</a>
+              <a class="nav-link text-light" href="./index.php">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light" href="#">Pricing</a>

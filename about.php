@@ -16,7 +16,7 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/59ad435b01.js" crossorigin="anonymous"></script>
-    </head>
+</head>
     <style>
         .bg{
     background-image: url("https://www.camasys.com//images_camasys/cache/team-work-1600x1000.jpg");
@@ -200,7 +200,7 @@
 
 
     </style>
-    <body >
+<body >
 
   <!-- Topbar -->
    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2d2d2d!important">
@@ -215,22 +215,22 @@
     <div class="collapse navbar-collapse col-lg-5" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html"><i class="fas fa-home px-1"></i>Home</a>
+          <a class="nav-link" href="index.php"><i class="fas fa-home px-1"></i>Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"><i class="fas fa-tags px-1"></i></i>Pricing</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#cat"><i class="fas fa-users px-1"></i>About
-                </a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link" href="#"><i class="far fa-life-ring px-1"></i>Support</a>
+         <a class="nav-link" href="./support.php"><i class="far fa-life-ring px-1"></i>Support</a>
         </li>
 
         <li class="nav-item">
-         <a class="nav-link" href="#"><i class="fas fa-phone-alt px-1"></i>Contact Us</a>
+          <a class="nav-link active" href="./about.php"><i class="fas fa-users px-1"></i>About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.php"><i class="fas fa-phone-alt px-1"></i>Contact Us</a>
         </li>
 
         
@@ -417,7 +417,7 @@ Society - We create products e peak of our endeavour, this is our goal, their sa
           <h3 class="text-white">CarGo</h3>
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Home</a>
+              <a class="nav-link text-light" href="./index.php">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light" href="#">Pricing</a>

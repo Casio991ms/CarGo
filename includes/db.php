@@ -1,3 +1,3 @@
 <?php
- $conn=mysqli_connect('localhost','root','dhruba0004','cargo');
+ $conn=mysqli_connect('localhost','root','','cargo');
  ?>
