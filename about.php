@@ -64,122 +64,6 @@
 
 
 
-#mode
-{
-    width:30px;
-    cursor: pointer;
-}
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  margin: 0 auto;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: #737373;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  
-}
-
-/* Container around content */
-.container1 {
-  padding: 10px 40px;
-  position: relative;
-  width: 50%;
-}
-
-
-
-/* Place the container to the left */
-.left {
-  left: 0;
-}
-
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: #fff;
-  position: relative;
-  border-radius: 6px;
-  box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 30%);
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-  left: 31px;
-  }
-  
-  /* Full-width containers */
-  .container1 {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-  }
-  
-  /* Make sure that all arrows are pointing leftwards */
-  .container1::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white;
-  }
-
-  /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-  left: 15px;
-  }
-  
-  /* Make all right containers behave like the left ones */
-  .right {
-  left: 0%;
-  }
-
 
     </style>
     <body >
@@ -289,15 +173,15 @@ car rental software</h1>
         </div><br><br>
 
 
-     <div class="mb-5">
+    <div class="mb-5">
         
                 <div>
                     <h2 class="text-center">Making the change</h2>
                      <p class="under text-center" style="margin-bottom:100px;">-----------<i class="fa fa-star"></i>-----------</p>
                      <div class="timeline">
-  <div class="container1 left">
-    <div class="content">
-        <i class="fa fa-circle fa-2x" style="background-color:white;padding:10px;color:grey;border-radius: 50%; border:3px solid #737373; position: absolute;left:103%;z-index: 1;"></i>
+  <div class="row">
+    <div class="col-md-4 service-item">
+        
       <img src="./assets/images/our-mission.png"  width="350" height="200">
       
     <p>As the automotive industry evolved, Navotar was quick to accommodate to the new standards. With the objective to solve the many issues rental companies face, our software is now used in countries around the world.
@@ -305,20 +189,15 @@ car rental software</h1>
 </p>
                         
     </div>
-  </div>
-  <div class="container1 right">
-    <div class="content">
-        <i class="fa fa-circle fa-2x" style="background-color:white;padding:10px;color:grey;border-radius: 50%; border:3px solid #737373; position: absolute;right:103%;z-index: 1;"></i>
+    <div class="col-md-4 service-item">
+
       <img src="./assets/images/vision.png">
       <p>Navotar uses the latest tech advancements to eliminate common issues in the car rental business. By going completely paperless, Navotar has widely broadened the spectrum of services car rental pr hard copy. We plan to continually develop our car rental software. We are always working to give our customers the best possible services available</p>
       
-  
                             </div>
   
-  </div>
-  <div class="container1 left">
-    <div class="content">
-        <i class="fa fa-circle fa-2x" style="background-color:white;padding:10px;color:grey;border-radius: 50%;border:3px solid #737373; position: absolute;left:103%;z-index: 1;" ></i>
+    <div class="col-md-4 service-item">
+       
        <img src="./assets/images/values.png">
      <p>For people and companies - We create products that make their everyday lives better.
 Society - We create products e peak of our endeavour, this is our goal, their satisfaction</p>
