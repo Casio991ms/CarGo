@@ -5,7 +5,7 @@ $password=$_POST['password'];
 
 include("../includes/db.php");
 
-if(isset($_POST['submit1']))
+/*if(isset($_POST['submit1']))
 {
   $query="SELECT * from users where email='$email'";
    $result=mysqli_query($conn, $query);
@@ -38,7 +38,7 @@ if(isset($_POST['submit1']))
 
   die();
 }
-  
+  */
   
 
   $sql="SELECT * from users where email='$email' and password='$password'";

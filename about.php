@@ -16,7 +16,7 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/59ad435b01.js" crossorigin="anonymous"></script>
-</head>
+    </head>
     <style>
         .bg{
     background-image: url("https://www.camasys.com//images_camasys/cache/team-work-1600x1000.jpg");
@@ -25,7 +25,8 @@
     background-color: blue;
     margin-top: 10%;
     }
-.content_parallax_over_image {
+
+.over_image {
     background-image: url(https://www.camasys.com/templates/camasys/images/rightkiller.png);
     background-size: 100%;
     background-position: bottom center;
@@ -33,15 +34,8 @@
     height: 250px;
     margin-top: -300px;
 }
-.hd{
-    font-weight: bold;
-    font-size:60px;
-    color:#000;
-}
-.under{
-    color:var(--heading-color);
-    font-size: 30px;
-}
+
+
 .number
 {
     background-color: #050058; 
@@ -59,23 +53,13 @@
         padding:10px;
     }
 
-.contact-box
-{
-    box-shadow: 0px 0px 10px 2px var(--contactbox-color);
-    border-radius: 3px;
-    padding:20px;
-    margin: 4%;
-    background-color: var(--boxbackground-color);
-}
   .service-item{
     text-align: center;
     background-color: #fff;
     padding: 30px 25px;
     margin-bottom: 30px;
-    -webkit-box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 10%);
     box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 30%);
-    -webkit-transition: .25s ease-out;
-    transition: .25s ease-out;
+  
     }
 
 
@@ -88,7 +72,6 @@
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -101,14 +84,13 @@
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -3px;
+  
 }
 
 /* Container around content */
 .container1 {
   padding: 10px 40px;
   position: relative;
-  background-color: inherit;
   width: 50%;
 }
 
@@ -135,7 +117,7 @@
   right: 30px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent white;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -149,7 +131,7 @@
   left: 30px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent white;
 }
 
 /* Fix the circle for containers on the right side */
@@ -185,7 +167,7 @@
   left: 60px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent white;
   }
 
   /* Make sure all circles are at the same spot */
@@ -200,7 +182,7 @@
 
 
     </style>
-<body >
+    <body >
 
   <!-- Topbar -->
    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2d2d2d!important">
@@ -215,22 +197,22 @@
     <div class="collapse navbar-collapse col-lg-5" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
         <li class="nav-item">
-          <a class="nav-link" href="index.php"><i class="fas fa-home px-1"></i>Home</a>
+          <a class="nav-link active" href="index.php"><i class="fas fa-home px-1"></i>Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"><i class="fas fa-tags px-1"></i></i>Pricing</a>
         </li>
 
         <li class="nav-item">
-         <a class="nav-link" href="./support.php"><i class="far fa-life-ring px-1"></i>Support</a>
+          <a class="nav-link" href="about.php"><i class="fas fa-users px-1"></i>About
+                </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="support.php"><i class="far fa-life-ring px-1"></i>Support</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" href="./about.php"><i class="fas fa-users px-1"></i>About</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="./contact.php"><i class="fas fa-phone-alt px-1"></i>Contact Us</a>
+         <a class="nav-link" href="contact.php"><i class="fas fa-phone-alt px-1"></i>Contact Us</a>
         </li>
 
         
@@ -262,7 +244,7 @@ car rental software</h1>
     </div>
   </div>
 
-    <div class="content_parallax_over_image big_banner">
+    <div class="over_image">
     </div><br><br><br>
     <div class="container">
         <h1 class="text-center">About Us</h1>
@@ -313,9 +295,9 @@ car rental software</h1>
         </div><br><br>
 
 
-     <div class="mb-5" id="education">
+     <div class="mb-5">
         
-                <div class="resume-section-content">
+                <div>
                     <h2 class="text-center">Making the change</h2>
                      <p class="under text-center" style="margin-bottom:100px;">-----------<i class="fa fa-star"></i>-----------</p>
                      <div class="timeline">
@@ -417,7 +399,7 @@ Society - We create products e peak of our endeavour, this is our goal, their sa
           <h3 class="text-white">CarGo</h3>
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link text-light" href="./index.php">Home</a>
+              <a class="nav-link text-light" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light" href="#">Pricing</a>

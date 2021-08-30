@@ -80,11 +80,6 @@ h2
             <strong>Warning!</strong> Wrong email address and password.
           </div>
         <?php } ?>
-        <?php if(isset($_SESSION['warning'])) { ?>
-          <div class="alert alert-warning">
-            <strong>Please login to order something!</strong>
-          </div>
-        <?php } ?>
 
              
 

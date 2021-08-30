@@ -25,7 +25,7 @@
     
     margin-top: 9%;
     }
-.content_parallax_over_image {
+.over_image {
     background-image: url(https://www.camasys.com/templates/camasys/images/rightkiller.png);
     background-size: 100%;
     background-position: bottom center;
@@ -39,7 +39,6 @@
     border-radius: 3px;
     padding:20px;
     margin: 4%;
-    background-color: var(--boxbackground-color);
 }
 label{
       background-color: #e5e5e5;
@@ -129,7 +128,7 @@ label{
     </div>
 </div>
 
-    <div class="content_parallax_over_image big_banner">
+    <div class="over_image">
     </div><br><br><br>
 
     <div class="container">
@@ -154,20 +153,20 @@ label{
 
              <span class="sub1" style="margin-left: 40%;"><i class="fa fa-phone-square fa-4x"></i><br>
                 <span style="margin-left: 22%;">Mobile number</span></span><br><br>
-            <span style="margin-left:35px; color:var(--secondary-color);">+8801775375309</span><br>
-            <span style="margin-left:35px; color:var(--secondary-color);">+8801303051468</span>
+            <span style="margin-left:35px;">+8801775375309</span><br>
+            <span style="margin-left:35px;">+8801303051468</span>
         </div>
 
             <div class="col-lg-3 contact-box">
               <span class="sub1" style="margin-left: 40%;"><i class="fa fa-envelope fa-4x"></i><br> <span style="margin-left: 43%;">Email</span></span><br><br>
-               <span style="margin-left:30px; color:var(--secondary-color);">sadiadhruba@gmail.com</span><br>
-            <span style="margin-left:30px; color:var(--secondary-color);">sadiatasnim@iut-dhaka.edu</span>
+               <span style="margin-left:30px;">sadiadhruba@gmail.com</span><br>
+            <span style="margin-left:30px;">sadiatasnim@iut-dhaka.edu</span>
             </div>
             <div class="col-lg-3 contact-box">
               <span class="sub1" style="margin-left: 40%;" ><i class="fa fa-home fa-4x"></i>  
               <span style="margin-left: 35%;">Address</span></span><br><br>
-               <span style="margin-left:35px; color:var(--secondary-color);">  Gazipur,Bangladesh</span><br>
-            <small style="margin-left:35px; color:var(--secondary-color);">Islamic University of technology</small>
+               <span style="margin-left:35px;">  Gazipur,Bangladesh</span><br>
+            <small style="margin-left:35px;">Islamic University of technology</small>
             </div>
         </div>
 <br><br><br><br>
@@ -312,8 +311,7 @@ label{
 <script src="https://maps.google.com/maps/api/js"></script>
 <script>
     function regular_map() {
-    var var_location = new google.maps.LatLng(24.757769, 90.399626);
-
+    var var_location = new google.maps.LatLng(23.94837, 90.37930);
     var var_mapoptions = {
       center: var_location,
       zoom: 15
