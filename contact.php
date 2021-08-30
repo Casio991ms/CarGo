@@ -50,7 +50,7 @@ label{
 }
 
 .social-icons .social-icon {
-    display: inline-flex;
+    
     align-items: center;
     justify-content: center;
     height: 3.00rem;
@@ -61,6 +61,7 @@ label{
     font-size: 1.5rem;
     margin-right: 1.5rem;
     text-decoration: none;
+    padding:10px 15px;
 }
 
 .sub1
