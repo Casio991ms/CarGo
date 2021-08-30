@@ -184,54 +184,48 @@
     </style>
     <body >
 
-  <!-- Topbar -->
-   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2d2d2d!important">
-      <div class="container">
+    <!-- Topbar start-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2d2d2d!important">
+        <div class="container">
         <div class="col-lg-3">
-       <img class="navbar-brand" src="./assets/images/logo.png" width="100" height="80" style="border-radius: 50%;">
-    <br>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-    <div class="collapse navbar-collapse col-lg-5" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" href="index.php"><i class="fas fa-home px-1"></i>Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-tags px-1"></i></i>Pricing</a>
-        </li>
+            <img class="navbar-brand" src="./assets/images/logo.png" width="100" height="80" style="border-radius: 50%;">
+            <br>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
 
-        <li class="nav-item">
-          <a class="nav-link" href="about.php"><i class="fas fa-users px-1"></i>About
-                </a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link" href="support.php"><i class="far fa-life-ring px-1"></i>Support</a>
-        </li>
+        <div class="collapse navbar-collapse col-lg-5" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.php"><i class="fas fa-home px-1"></i>Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-tags px-1"></i></i>Pricing</a>
+            </li>
 
-        <li class="nav-item">
-         <a class="nav-link" href="contact.php"><i class="fas fa-phone-alt px-1"></i>Contact Us</a>
-        </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./support.php"><i class="far fa-life-ring px-1"></i>Support</a>
+            </li>
 
-        
-        
-      </ul>
-    
+            <li class="nav-item">
+                <a class="nav-link active" href="./about.php"><i class="fas fa-users px-1"></i>About</a>
+            </li>            
 
+            <li class="nav-item">
+                <a class="nav-link" href="./contact.php"><i class="fas fa-phone-alt px-1"></i>Contact Us</a>
+            </li>
+        </ul>
+        </div>
 
-    </div>
-    
-    <div class="col-lg-2">
-      <a class="btn btn-outline-info" href="login&registration/userlogin.php">Login</a>
-      <a class="btn btn-outline-info" href="login&registration/registration.php">Register</a>
+        <div class="col-lg-2">
+        <a class="btn btn-outline-info" href="login&registration/userlogin.php">Login</a>
+        <a class="btn btn-outline-info" href="login&registration/registration.php">Register</a>
+        </div>
 
-    </div>
-  
-</div>
-
-</nav>
+        </div>
+    </nav>
+    <!-- Topbar end-->
 
 
   <!-- Top Image -->
