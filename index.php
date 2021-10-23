@@ -339,7 +339,7 @@
             <div class="card-body">
               <h5 class="card-title">Run your car rental business as efficiently as possible.</h5>
               <a href="#" class="btn btn-primary mx-2">Download</a>              
-              <a href="#" class="btn btn-primary mx-2">Use Now</a>
+              <a href="./menupage.php" class="btn btn-primary mx-2">Use Now</a>
             </div>
           </div>
         </div>
@@ -348,7 +348,7 @@
             <div class="card-body">
               <h5 class="card-title">Optimize your time and increase your company's revenues with CarGo.</h5>
               <a href="#" class="btn btn-primary mx-2">Download</a>
-              <a href="#" class="btn btn-primary mx-2">Use Now</a>
+              <a href="./menupage.php" class="btn btn-primary mx-2">Use Now</a>
             </div>
           </div>
         </div>
@@ -357,7 +357,7 @@
             <div class="card-body">
               <h5 class="card-title">Download to evaluate all the benefits of our software right now.</h5>
               <a href="#" class="btn btn-primary mx-2">Download</a>
-              <a href="#" class="btn btn-primary mx-2">Use Now</a>
+              <a href="./menupage.php" class="btn btn-primary mx-2">Use Now</a>
             </div>
           </div>
         </div>

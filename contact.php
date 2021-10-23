@@ -19,14 +19,14 @@ session_start();
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/59ad435b01.js" crossorigin="anonymous"></script>
-    </head>
-    <style>
-                .bg{
+</head>
+<style>
+    .bg{
     background-image: url(./assets/images/contact.jpg);
     background-size: 100% auto;
     height: 500px;
     
-    margin-top: 9%;
+    /* margin-top: 9%; */
     }
 .over_image {
     background-image: url(https://www.camasys.com/templates/camasys/images/rightkiller.png);
@@ -73,61 +73,17 @@ label{
     font-size:20px;
 }
     </style>
-    <body >
+<body >
 
-  <!-- Topbar -->
-   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2d2d2d!important">
-      <div class="container">
-        <div class="col-lg-3">
-       <img class="navbar-brand" src="./assets/images/logo.png" width="100" height="80" style="border-radius: 50%;">
-    <br>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-    <div class="collapse navbar-collapse col-lg-5" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link" href="index.php"><i class="fas fa-home px-1"></i>Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-tags px-1"></i></i>Pricing</a>
-        </li>
-
-        <li class="nav-item">
-         <a class="nav-link" href="./support.php"><i class="far fa-life-ring px-1"></i>Support</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="./about.php"><i class="fas fa-users px-1"></i>About</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link active" href="./contact.php"><i class="fas fa-phone-alt px-1"></i>Contact Us</a>
-        </li>
-
-        
-        
-      </ul>
-    
+  <?php
+    include("includes/header.php");
+  ?>
 
 
-    </div>
-    
-    <div class="col-lg-2">
-      <a class="btn btn-outline-info" href="login&registration/userlogin.php">Login</a>
-      <a class="btn btn-outline-info" href="login&registration/registration.php">Register</a>
-
-    </div>
-  
-</div>
-
-</nav>
-
-<div class="bg mb-5">
+<div class="bg my-5">
     <div class="text-left">
       <h1 style="padding-top:16%;font-size:5.5rem; padding-left:3%;padding-right: 7%;">Need help?</h1>
-      <button type="button" class="btn btn-info w-25 p-2 mx-4" style="font-size:1.8rem; border-radius:30px;">Contact us</button>
+      <a href="contact.php#sendMessage"><button type="button" class="btn btn-info w-25 p-2 mx-4" style="font-size:1.8rem; border-radius:30px;">Contact us</button></a>
       
     </div>
 </div>
@@ -152,7 +108,7 @@ label{
     </div>
 <br><br>
 
-<div class="row">
+<div class="row" id="sendMessage">
             <div class="col-lg-3 contact-box">
 
              <span class="sub1" style="margin-left: 40%;"><i class="fa fa-phone-square fa-4x"></i><br>
@@ -184,44 +140,44 @@ label{
 
 <br><br><br><br>
 <h1>Send Messages to us</h1><br>
-        <form  action="sendtext.php" method="POST">
-                <div class="row">
-                <div class="col-md-5">
-                    <div class="form-group">
-                    <label>Full Name</label>
-                    <input required type="text" name="fullname" class="form-control" placeholder="Enter your fullname">
-                </div>
-                    <div class="form-group">
-                    <label>Mail</label>
-                    <input required type="mail" name="mail" class="form-control" placeholder="Enter your email address">
-                </div>
-                <div class="form-group">
-                    <label>Phone number</label>
-                    <input required type="text" name="phone" class="form-control" placeholder="Enter your phone number">
-                </div>
-            </div>
+  <form  action="sendtext.php" method="POST">
+    <div class="row">
+    <div class="col-md-5">
+      <div class="form-group">
+        <label>Full Name</label>
+        <input required type="text" name="fullname" class="form-control" placeholder="Enter your fullname">
+      </div>
+      <div class="form-group">
+        <label>Mail</label>
+        <input required type="mail" name="mail" class="form-control" placeholder="Enter your email address">
+      </div>
+      <div class="form-group">
+        <label>Phone number</label>
+        <input required type="text" name="phone" class="form-control" placeholder="Enter your phone number">
+      </div>
+    </div>
 
-                <div class="col-md-7">
-                 <div class="form-group">
-                    <label>Message</label>
-                    <textarea required class="form-control" name="text" rows="8" cols="30" placeholder="Write a message"></textarea>
-                </div><br>
-                <div class="pull-right">
-                    <button class="btn btn-success p-2" type="submit">Send</button>
-                </div>
-            </div>
-        
-            
-            </div>
-            </form><br><br>
-             <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/sadia-tasnim-dhruba-2a70a31a8"><i class="fa fa-linkedin"></i></a>
-                        <a class="social-icon" href="https://github.com/sadiatasnimdhruba"><i class="fa fa-github"></i></a>
-                        <a class="social-icon" href="https://instagram.com/sadia_tasnim_dhruba?igshid=16bu8laa3n5fr"><i class="fa fa-instagram "></i></a>
-                        <a class="social-icon" href="https://www.facebook.com/sadiatasnim.dhruba"><i class="fa fa-facebook-f"></i></a>
-                    </div>
+    <div class="col-md-7">
+      <div class="form-group">
+        <label>Message</label>
+        <textarea required class="form-control" name="text" rows="8" cols="30" placeholder="Write a message"></textarea>
+      </div><br>
+      <div class="pull-right">
+        <button class="btn btn-success p-2" type="submit">Send</button>
+      </div>
+    </div>
+  
+      
+      </div>
+      </form><br><br>
+        <div class="social-icons">
+                  <a class="social-icon" href="https://www.linkedin.com/in/sadia-tasnim-dhruba-2a70a31a8"><i class="fa fa-linkedin"></i></a>
+                  <a class="social-icon" href="https://github.com/sadiatasnimdhruba"><i class="fa fa-github"></i></a>
+                  <a class="social-icon" href="https://instagram.com/sadia_tasnim_dhruba?igshid=16bu8laa3n5fr"><i class="fa fa-instagram "></i></a>
+                  <a class="social-icon" href="https://www.facebook.com/sadiatasnim.dhruba"><i class="fa fa-facebook-f"></i></a>
+              </div>
 
-            <br><br><br><br><br><br>
+      <br><br><br><br><br><br>
     
 
 

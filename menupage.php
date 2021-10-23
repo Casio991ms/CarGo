@@ -5,17 +5,18 @@ if(!isset($_SESSION['login']))
     header("Location: http://localhost/cargo/login&registration/userlogin.php");
     die();
 }
-include("includes/header.php");
 ?>
 
 <!DOCTYPE HTML>
 
 <html>
 <head>
-	<title>Main Menu</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <title>CarGo</title>
+    <link rel="shortcut icon" href="assets\images\download.png">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -183,57 +184,61 @@ ul{
 
 </style>
 <body>
-        <div class="container">
-                <nav class="main-nav">
-                    <img class="logo" src="IMAGES_WEB\undo.png">
-                    <ul class="main-menu">
-                        <li><a href="index.php">Go back to Home Page</a></li>
-                    </ul>
-                </nav>
+    <?php
+        include("includes/header.php");
+    ?>
 
-         <section class="cards">
-                        <div id="gothere"> 
-                            <img src="IMAGES_WEB\11.jpg">
-                            <h3> ADD NEW WARE HOUSE</h3>
-                            <p>Add details of your ware house to save for<br>future use.</p>
-                            <a href="Add_warehouse.php" class="btn">ADD<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                        </div>
-                        <div> 
-                            <img src="IMAGES_WEB\calculate-cost.jpg">
-                            <h3>CALCULATE YOUR COST</h3>
-                            <p>Manage your cost, rate and other information.</p>
-                            <a href="calculate_cost_form.php" class="btn1">MANAGE<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                        </div>
-                        <div id="gohere"> 
-                            <img src="IMAGES_WEB\3.jpg">
-                            <h3>ADD NEW VEHICLE</h3>
-                            <p>Add details of your vehicle to save them for the future.</p>
-                            <a href="Add_new_vehicle.php" class="btn">ADD<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                        </div>
+    <div class="container mt-5">
+        <nav class="main-nav">
+            <img class="logo" src="IMAGES_WEB\undo.png">
+            <ul class="main-menu">
+                <li><a href="index.php">Go back to Home Page</a></li>
+            </ul>
+        </nav>
+
+        <section class="cards">
+            <div id="gothere"> 
+                <img src="IMAGES_WEB\11.jpg">
+                <h3> ADD NEW WARE HOUSE</h3>
+                <p>Add details of your ware house to save for<br>future use.</p>
+                <a href="Add_warehouse.php" class="btn">ADD<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            </div>
+            <div> 
+                <img src="IMAGES_WEB\calculate-cost.jpg">
+                <h3>CALCULATE YOUR COST</h3>
+                <p>Manage your cost, rate and other information.</p>
+                <a href="calculate_cost_form.php" class="btn1">MANAGE<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            </div>
+            <div id="gohere"> 
+                <img src="IMAGES_WEB\3.jpg">
+                <h3>ADD NEW VEHICLE</h3>
+                <p>Add details of your vehicle to save them for the future.</p>
+                <a href="Add_new_vehicle.php" class="btn">ADD<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            </div>
 
         </section>
         <section class="cards">
-                            <div id="gothere"> 
-                                <img src="IMAGES_WEB\22.jpg">
-                                <h3>AUDIT BY DATE</h3>
-                                <p>You can view the details with a date range and evaluate the performance of each vehicle.</p>
-                                <a href="Audit_by_date.php" class="btn">AUDIT<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                            </div>
-                            <div> 
-                                <img src="IMAGES_WEB\1000.jpg">
-                                <h3>CALCULATE TRANSPORT COST</h3>
-                                <p>Manage your transport cost and other information.</p>
-                                <a href="transport_cost_management.php" class="btn2">MANAGE<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                            </div>
-                            <div id="gohere"> 
-                                <img src="IMAGES_WEB\2.jpg">
-                                <h3>AUDIT TRANSPORT COST</h3>
-                                <p>You can view Transport cost in details with a date range.</p>
-                                <a href="Audit_transport_cost.php" class="btn">AUDIT<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                                
-                            </div>
-                            <br><br><br><br>
-         </section>
+            <div id="gothere"> 
+                <img src="IMAGES_WEB\22.jpg">
+                <h3>AUDIT BY DATE</h3>
+                <p>You can view the details with a date range and evaluate the performance of each vehicle.</p>
+                <a href="Audit_by_date.php" class="btn">AUDIT<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            </div>
+            <div> 
+                <img src="IMAGES_WEB\1000.jpg">
+                <h3>CALCULATE TRANSPORT COST</h3>
+                <p>Manage your transport cost and other information.</p>
+                <a href="transport_cost_management.php" class="btn2">MANAGE<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            </div>
+            <div id="gohere"> 
+                <img src="IMAGES_WEB\2.jpg">
+                <h3>AUDIT TRANSPORT COST</h3>
+                <p>You can view Transport cost in details with a date range.</p>
+                <a href="Audit_transport_cost.php" class="btn">AUDIT<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                
+            </div>
+            <br><br><br><br>
+        </section>
 
 </div>
 	

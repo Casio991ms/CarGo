@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,35 +21,34 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/59ad435b01.js" crossorigin="anonymous"></script>
     </head>
-    <style>
-        .bg{
+<style>
+    .bg{
     background-image: url("https://www.camasys.com//images_camasys/cache/team-work-1600x1000.jpg");
     background-size: 100% auto;
     height: 500px;
     background-color: blue;
-    margin-top: 10%;
     }
 
-.over_image {
-    background-image: url(https://www.camasys.com/templates/camasys/images/rightkiller.png);
-    background-size: 100%;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    height: 250px;
-    margin-top: -300px;
-}
+  .over_image {
+      background-image: url(https://www.camasys.com/templates/camasys/images/rightkiller.png);
+      background-size: 100%;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      height: 250px;
+      margin-top: -300px;
+  }
 
 
-.number
-{
-    background-color: #050058; 
-    color:#fff;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    padding:10px;
-                        
-}
-.desc
+  .number
+  {
+      background-color: #050058; 
+      color:#fff;
+      margin-bottom: 50px;
+      margin-top: 50px;
+      padding:10px;
+                          
+  }
+  .desc
     {
         background-color: #91a8fd;
         margin-bottom: 50px;
@@ -61,60 +64,17 @@
     box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 30%);
   
     }
+  </style>
+<body >
 
-
-
-
-    </style>
-    <body >
-
-    <!-- Topbar start-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2d2d2d!important">
-        <div class="container">
-        <div class="col-lg-3">
-            <img class="navbar-brand" src="./assets/images/logo.png" width="100" height="80" style="border-radius: 50%;">
-            <br>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-
-        <div class="collapse navbar-collapse col-lg-5" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link" href="./index.php"><i class="fas fa-home px-1"></i>Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-tags px-1"></i></i>Pricing</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="./support.php"><i class="far fa-life-ring px-1"></i>Support</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link active" href="./about.php"><i class="fas fa-users px-1"></i>About</a>
-            </li>            
-
-            <li class="nav-item">
-                <a class="nav-link" href="./contact.php"><i class="fas fa-phone-alt px-1"></i>Contact Us</a>
-            </li>
-        </ul>
-        </div>
-
-        <div class="col-lg-2">
-        <a class="btn btn-outline-info" href="login&registration/userlogin.php">Login</a>
-        <a class="btn btn-outline-info" href="login&registration/registration.php">Register</a>
-        </div>
-
-        </div>
-    </nav>
-    <!-- Topbar end-->
+  <?php
+      include("includes/header.php");
+  ?>
 
 
   <!-- Top Image -->
 
-  <div class="bg mb-5">
+  <div class="bg my-5">
     <div class="text-center">
       <h1 class="text-white" style="padding-top:6%;font-size:5.5rem; padding-left:7%;padding-right: 7%;">Welcome to the new world of
 car rental software</h1>

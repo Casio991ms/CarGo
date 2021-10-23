@@ -1,8 +1,3 @@
-<?php
-session_start();
-?>
-
-<body >
 
     <!-- Topbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2d2d2d!important">
@@ -29,22 +24,61 @@ session_start();
                 <a class="nav-link" href="index.php"><i class="fas fa-home px-1"></i>Home</a>
             <?php
               } ?>
-            ?>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-tags px-1"></i></i>Pricing</a>
+            <?php
+              if(basename($_SERVER['PHP_SELF']) == "pricing.php")
+              { ?>
+                <a class="nav-link active" href="#"><i class="fas fa-tags px-1"></i></i>Pricing</a>
+            <?php
+              }
+              else
+              { ?>
+                <a class="nav-link" href="#"><i class="fas fa-tags px-1"></i></i>Pricing</a>
+            <?php
+              } ?>
           </li>
 
           <li class="nav-item">
-          <a class="nav-link" href="./support.php"><i class="far fa-life-ring px-1"></i>Support</a>
+            <?php
+              if(basename($_SERVER['PHP_SELF']) == "support.php")
+              { ?>
+                <a class="nav-link active" href="./support.php"><i class="far fa-life-ring px-1"></i>Support</a>
+            <?php
+              }
+              else
+              { ?>
+                <a class="nav-link" href="./support.php"><i class="far fa-life-ring px-1"></i>Support</a>
+            <?php
+              } ?>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="./about.php"><i class="fas fa-users px-1"></i>About</a>
+            <?php
+              if(basename($_SERVER['PHP_SELF']) == "about.php")
+              { ?>
+                <a class="nav-link active" href="./about.php"><i class="fas fa-users px-1"></i>About</a>
+            <?php
+              }
+              else
+              { ?>
+                <a class="nav-link" href="./about.php"><i class="fas fa-users px-1"></i>About</a>
+            <?php
+              } ?>
           </li>          
 
           <li class="nav-item">
-            <a class="nav-link" href="./contact.php"><i class="fas fa-phone-alt px-1"></i>Contact Us</a>
+            <?php
+              if(basename($_SERVER['PHP_SELF']) == "contact.php")
+              { ?>
+                <a class="nav-link active" href="./contact.php"><i class="fas fa-phone-alt px-1"></i>Contact Us</a>
+            <?php
+              }
+              else
+              { ?>
+                <a class="nav-link" href="./contact.php"><i class="fas fa-phone-alt px-1"></i>Contact Us</a>
+            <?php 
+              } ?>
           </li>
         </ul>
       </div>
