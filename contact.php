@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -170,9 +173,18 @@ label{
             <small style="margin-left:35px;">Islamic University of technology</small>
             </div>
         </div>
+
+
+        <?php if(isset($_SESSION['send'])){?>
+          <div class="alert alert-success" id="contact">
+            <strong>Your Message sent successfully</strong>.
+          </div>
+        <?php }?>
+
+
 <br><br><br><br>
 <h1>Send Messages to us</h1><br>
-        <form  action="contact.php" method="POST">
+        <form  action="sendtext.php" method="POST">
                 <div class="row">
                 <div class="col-md-5">
                     <div class="form-group">
@@ -336,3 +348,5 @@ label{
 </script>
 </body>
 </html>
+
+<?php unset($_SESSION['send']); ?>
