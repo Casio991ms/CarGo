@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>CarGo</title>
-  <link rel="shortcut icon" href="assets\images\download.png">
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/59ad435b01.js" crossorigin="anonymous"></script>
+<?php
+  session_start();
+  include("includes/header.php");
+?>
   <style>
 
     .icons
@@ -122,57 +108,13 @@
 
 <body >
 
-    <!-- Topbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2d2d2d!important">
-      <div class="container">
-        <div class="col-lg-3">
-          <img class="navbar-brand" src="./assets/images/logo.png" width="100" height="80" style="border-radius: 50%;">
-          <br>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        
-      <div class="collapse navbar-collapse col-lg-5" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.php"><i class="fas fa-home px-1"></i>Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-tags px-1"></i></i>Pricing</a>
-          </li>
-
-          <li class="nav-item">
-          <a class="nav-link" href="./support.php"><i class="far fa-life-ring px-1"></i>Support</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="./about.php"><i class="fas fa-users px-1"></i>About Us</a>
-          </li>          
-
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.php"><i class="fas fa-phone-alt px-1"></i>Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    
-      <div class="col-lg-2">
-        <a class="btn btn-outline-info" href="login&registration/userlogin.php">Login</a>
-        <a class="btn btn-outline-info" href="login&registration/registration.php">Register</a>
-      </div>
-
-      </div>
-    </nav><br><br><br>
-
-
-
   <!-- Top Image -->
   
   <div class="home-top mb-5">
     <div id="text-in-left" class="text-center">
       <h2 class="text-white m-5">AUTOMATE THE MANAGEMENT OF YOUR FLEET</h2>
       <button type="button" class="btn btn-light w-25 p-2 mx-4">Download</button>
-      <button type="button" class="btn btn-primary w-25 p-2 mx-4">Use Now</button>
+      <a href="./menupage.php"><button type="button" class="btn btn-primary w-25 p-2 mx-4">Use Now</button></a>
     </div>
   </div>
   <div class="icons">
@@ -410,103 +352,6 @@
     </div>
   </div><!-- Bottom Carousel -->
 
-  <!-- Footer -->
-  <div class="bottom bg-dark">
-    <div class="container-lg p-4">
-      <div class="row">
-        <div class="col col-lg-3">
-          <h3 class="text-white">CarGo</h3>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link text-light" href="./index.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Software Reviews</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Our Partners</a>
-            </li>
-          </ul>          
-        </div>
-
-        <div class="col col-lg-3">
-          <h3 class="text-white">Our Products</h3>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">CarGo Offline</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">CarGo Online</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col col-lg-3">
-          <h3 class="text-white">Important Links</h3>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Careers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Privacy Policy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">About Us</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col col-lg-3">
-          <h3 class="text-white">Find Us</h3>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <i class="fas fa-map-marker-alt text-light"></i> 
-              <span class="text-muted">Islamic University of Technology, Gazipur, Dhaka, Bangladesh</span>
-            </li>
-            <li class="nav-item">
-              <i class="fas fa-phone-alt text-light"></i>
-              <a class="text-light" href="tel:8801531960091">
-                +8801531960091
-              </a>            
-            </li>
-            <li class="nav-item">
-              <i class="fas fa-envelope text-light"></i>
-              <a class="text-light" href="mailto:customer@cargo.com">
-                customer@cargo.com
-              </a>            
-            </li>
-          </ul>
-
-          <ul class="nav my-4">
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#"><i class="fab fa-linkedin-in"></i></a>
-            </li>
-          </ul>
-
-        </div>
-
-      </div>
-      
-    </div>
-
-  </div><!-- Footer -->
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="assets/js/script.js"></script>
-</body>
-</html>
+<?php
+  include("includes/footer.php");
+?>

@@ -4,7 +4,7 @@ session_start();
   $email=$_POST['email'];
   $password=$_POST['password'];
 
-  $conn=mysqli_connect('localhost','root','dhruba0004','restaurant');
+  // $conn=mysqli_connect('localhost','root','dhruba0004','restaurant');
 
   $sql="SELECT * from admin where email='$email' and password='$password'";
 

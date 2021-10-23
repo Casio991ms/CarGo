@@ -1,3 +1,13 @@
+<?php
+session_start();
+if(!isset($_SESSION['login']))
+{
+    header("Location: http://localhost/cargo/login&registration/userlogin.php");
+    die();
+}
+include("includes/header.php");
+?>
+
 <!DOCTYPE HTML>
 
 <html>
@@ -168,9 +178,9 @@ ul{
                 <nav class="main-nav">
                     <img class="logo" src="IMAGES_WEB\undo.png">
                     <ul class="main-menu">
-                        <li><a href="#">Go back to Home Page</a></li>
+                        <li><a href="index.php">Go back to Home Page</a></li>
                     </ul>
-                    </nav>
+                </nav>
 
          <section class="cards">
                         <div id="gothere"> 
@@ -216,7 +226,8 @@ ul{
                             <br><br><br><br>
          </section>
 
+</div>
 	
-	
-</body>
-</html>
+<?php
+    include("includes/footer.php");
+?>
