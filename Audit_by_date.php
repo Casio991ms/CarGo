@@ -205,7 +205,7 @@ session_start();
                 <input class="billdate" type="date" name="billing_date">
 
                 <h2 class="w_code">Select End Date</h2>
-                <input class="billdate" type="date" name="Date">
+                <input class="billdate" type="date" name="end_date">
 
            <div clss="btn">
             <button type="submit" name="proceed" class="button button1">PROCEED</button></form>
@@ -219,11 +219,13 @@ session_start();
       {
         $vehicle=$_POST['vehicle'];
         $billing_date=$_POST['billing_date'];
+        $end_date=$_POST['end_date'];
 
         $sql="SELECT vehicle.*,calculate_cost.*
               FROM vehicle
               join calculate_cost on vehicle.v_id=calculate_cost.vehicle
-              where vehicle.v_id='$vehicle'";
+              where vehicle.v_id='$vehicle' AND calculate_cost.billing_date
+              BETWEEN '$billing_date' AND '$end_date'";
         $result=mysqli_query($conn,$sql);
         
       }
