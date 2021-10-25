@@ -134,8 +134,8 @@
   <div class="home-top mb-5">
     <div id="text-in-left" class="text-center">
       <h2 class="text-white m-5">AUTOMATE THE MANAGEMENT OF YOUR FLEET</h2>
-      <button type="button" class="btn btn-light w-25 p-2 mx-4">Download</button>
-      <a href="./menupage.php"><button type="button" class="btn btn-primary w-25 p-2 mx-4">Use Now</button></a>
+      <a href="./Files/CarGo Offline.zip" class="btn btn-light w-25 p-2 mx-4">Download</a>
+      <a href="./menupage.php" class="btn btn-primary w-25 p-2 mx-4">Use Now</a>
     </div>
   </div>
   <div class="icons">
@@ -338,7 +338,7 @@
           <div class="card mb-5">
             <div class="card-body">
               <h5 class="card-title">Run your car rental business as efficiently as possible.</h5>
-              <a href="#" class="btn btn-primary mx-2">Download</a>              
+              <a href="./Files/CarGo Offline.zip" class="btn btn-primary mx-2">Download</a>              
               <a href="./menupage.php" class="btn btn-primary mx-2">Use Now</a>
             </div>
           </div>
@@ -347,7 +347,7 @@
           <div class="card mb-5">
             <div class="card-body">
               <h5 class="card-title">Optimize your time and increase your company's revenues with CarGo.</h5>
-              <a href="#" class="btn btn-primary mx-2">Download</a>
+              <a href="./Files/CarGo Offline.zip" class="btn btn-primary mx-2">Download</a>
               <a href="./menupage.php" class="btn btn-primary mx-2">Use Now</a>
             </div>
           </div>
@@ -356,7 +356,7 @@
           <div class="card mb-5">
             <div class="card-body">
               <h5 class="card-title">Download to evaluate all the benefits of our software right now.</h5>
-              <a href="#" class="btn btn-primary mx-2">Download</a>
+              <a href="./Files/CarGo Offline.zip" class="btn btn-primary mx-2">Download</a>
               <a href="./menupage.php" class="btn btn-primary mx-2">Use Now</a>
             </div>
           </div>
@@ -373,6 +373,11 @@
     </div>
   </div><!-- Bottom Carousel -->
 
-<?php
-  include("includes/footer.php");
-?>
+  <?php
+    include("includes/footer.php");
+  ?>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
