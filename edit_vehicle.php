@@ -24,17 +24,6 @@ include("includes/db.php");
 
     <title>Hello, world!</title>
         <style>
-      
-        body{
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      align-items: center;
-      background-image: url('login.jpg');
-      background-size: cover;
-      background-position: top center;
-      font-family: sans-serif;
-  }
 .form-control
 {
  background-color: #d6dcff;

@@ -56,7 +56,7 @@
         width: 40px;
         color: black;
         text-align: center;
-        line-height: 40px;
+        padding-top:10px;
         border-radius: 50%;
         transition: all 1.0s;
     }
@@ -138,14 +138,14 @@
     </div>
   </div>
 
-  <div class="icons">
+  <!-- <div class="icons">
     <a href=""class="facebook"><span class="text-light">Facebook</span><i class="fab fa-facebook-f"></i></a>
     <a href="" class="twitter">Twitter<i class="fa fa-twitter"></i></a>
     <a href="" class="instagram">Instagram<i class="fa fa-instagram"></i></a>
     <a href="" class="linkedin"><span class="text-light">LinkedIn</span><i class="fa fa-linkedin"></i></a>
     <a href="" class="whatsapp">WhatsApp<i class="fa fa-whatsapp"></i></a>
     <a href="" class="youtube">Youtube<i class="fa fa-youtube"></i></a>
-  </div>
+  </div> -->
 
   <!-- Features -->
   <div class="container-lg text-center features mb-5">

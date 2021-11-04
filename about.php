@@ -120,7 +120,7 @@
     </div>
     <div class="col-lg-9">
       <h1 class="text-center">Our Price and Quality Commitment to you</h1>
-      <p class="under text-center" style="margin-bottom:15px;">-----------<i class="fa fa-star"></i>-----------</p>
+      <p class="text-center" style="margin-bottom:15px;">-----------<i class="fa fa-star"></i>-----------</p>
       <p style="font-family: cursive; margin-left:50px;" >A lot of effort has been made to include the best possible combination of business elements in our  software to give you access to the same sophisticated tools as the big players in the industry. We are always on the lookout for innovative and effective approaches to the car rental business to ensure that we provide an efficient system. We stand behind the fact that we offer the best possible price for the significant number of features available. If you are a new customer and you find another car rental software in the market with better price for the same features, all you need to do is provide us with the information and we will meet the price. Business needs may vary, so should your car rental company require customization of the software, we can offer this to you at a reasonable price. Please do not hesitate to contact us should you have any questions. We will be very happy to assist you any way we can.</p>
 
     </div>

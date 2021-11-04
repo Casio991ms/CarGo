@@ -2,7 +2,7 @@
     background-image: url(../images/contact.jpg);
     background-size: 100% auto;
     height: 500px;
-    }
+}
 .over_image {
     background-image: url(https://www.camasys.com/templates/camasys/images/rightkiller.png);
     background-size: 100%;
@@ -25,21 +25,6 @@ label{
     font-weight: bold;
     padding: 5px;
     margin: 10px 0;
-}
-
-.social-icons .social-icon {
-    
-    align-items: center;
-    justify-content: center;
-    height: 3.00rem;
-    width: 3.00rem;
-    background-color: #022c65;
-    color: #fff;
-    border-radius: 100%;
-    font-size: 1.5rem;
-    margin-right: 1.5rem;
-    text-decoration: none;
-    padding:10px 15px;
 }
 
 .sub1

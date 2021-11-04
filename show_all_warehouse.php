@@ -17,12 +17,6 @@ $result=mysqli_query($conn,$sql);
 
 </head>
 <style type="text/css">
-    *{
-        box-sizing: border-box;
-        margin:0;
-        padding:0;
-
-    }
      .success, .error
         {
             color :#fff;
@@ -44,7 +38,7 @@ $result=mysqli_query($conn,$sql);
     
     
 </style>
-<body>
+<body style="background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(2 67 147));">
 
   <div>
             <?php if(isset($_SESSION['error'])){?>
