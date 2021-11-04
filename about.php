@@ -71,7 +71,6 @@ session_start();
       include("includes/header.php");
   ?>
 
-
   <!-- Top Image -->
 
   <div class="bg my-5">
@@ -144,7 +143,7 @@ car rental software</h1>
         
       <img src="./assets/images/our-mission.png"  width="350" height="200">
       
-    <p>As the automotive industry evolved, Navotar was quick to accommodate to the new standards. With the objective to solve the many issues rental companies face, our software is now used in countries around the world.
+    <p>As the automotive industry evolved, CarGo was quick to accommodate to the new standards. With the objective to solve the many issues rental companies face, our software is now used in countries around the world.
 
 </p>
                         
@@ -152,9 +151,9 @@ car rental software</h1>
     <div class="col-md-4 service-item">
 
       <img src="./assets/images/vision.png">
-      <p>Navotar uses the latest tech advancements to eliminate common issues in the car rental business. By going completely paperless, Navotar has widely broadened the spectrum of services car rental pr hard copy. We plan to continually develop our car rental software. We are always working to give our customers the best possible services available</p>
+      <p>CarGo uses the latest tech advancements to eliminate common issues in the car rental business. By going completely paperless, CarGo has widely broadened the spectrum of services car rental pr hard copy. We plan to continually develop our car rental software. We are always working to give our customers the best possible services available</p>
       
-                            </div>
+    </div>
   
     <div class="col-md-4 service-item">
        

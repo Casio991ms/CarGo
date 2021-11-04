@@ -27,14 +27,27 @@
           </li>
           <li class="nav-item">
             <?php
-              if(basename($_SERVER['PHP_SELF']) == "pricing.php")
+              if(basename($_SERVER['PHP_SELF']) == "about.php")
               { ?>
-                <a class="nav-link active" href="#"><i class="fas fa-tags px-1"></i></i>Pricing</a>
+                <a class="nav-link active" href="./about.php"><i class="fas fa-users px-1"></i>About</a>
             <?php
               }
               else
               { ?>
-                <a class="nav-link" href="#"><i class="fas fa-tags px-1"></i></i>Pricing</a>
+                <a class="nav-link" href="./about.php"><i class="fas fa-users px-1"></i>About</a>
+            <?php
+              } ?>
+          </li>          
+          <li class="nav-item">
+            <?php
+              if(basename($_SERVER['PHP_SELF']) == "pricing.php")
+              { ?>
+                <a class="nav-link active" href="./pricing.php"><i class="fas fa-tags px-1"></i></i>Pricing</a>
+            <?php
+              }
+              else
+              { ?>
+                <a class="nav-link" href="./pricing.php"><i class="fas fa-tags px-1"></i></i>Pricing</a>
             <?php
               } ?>
           </li>
@@ -53,19 +66,6 @@
               } ?>
           </li>
 
-          <li class="nav-item">
-            <?php
-              if(basename($_SERVER['PHP_SELF']) == "about.php")
-              { ?>
-                <a class="nav-link active" href="./about.php"><i class="fas fa-users px-1"></i>About</a>
-            <?php
-              }
-              else
-              { ?>
-                <a class="nav-link" href="./about.php"><i class="fas fa-users px-1"></i>About</a>
-            <?php
-              } ?>
-          </li>          
 
           <li class="nav-item">
             <?php

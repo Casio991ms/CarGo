@@ -15,7 +15,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/index_style.css">
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/59ad435b01.js" crossorigin="anonymous"></script>
@@ -129,8 +129,7 @@
     include("includes/header.php");
   ?>
 
-  <!-- Top Image -->
-  
+  <!-- Top Image -->  
   <div class="home-top mb-5">
     <div id="text-in-left" class="text-center">
       <h2 class="text-white m-5">AUTOMATE THE MANAGEMENT OF YOUR FLEET</h2>
@@ -138,6 +137,7 @@
       <a href="./menupage.php" class="btn btn-primary w-25 p-2 mx-4">Use Now</a>
     </div>
   </div>
+
   <div class="icons">
     <a href=""class="facebook"><span class="text-light">Facebook</span><i class="fab fa-facebook-f"></i></a>
     <a href="" class="twitter">Twitter<i class="fa fa-twitter"></i></a>
