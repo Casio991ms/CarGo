@@ -37,17 +37,15 @@
     <!-- Toggle Switch -->
     <div class="container-lg text-center mb-5">
         <div class="d-flex justify-content-center">
-            <span class="fs-4 px-3">
-                Monthly
-            </span>
+            <span class="fs-4 px-3">Monthly</span>
             <label class="switch">
-                <input type="checkbox" class="info">
+                <input type="checkbox" class="info" onclick="change(this)">
                 <span class="slider round"></span>
             </label>
-            <Span class="fs-4 px-3">
-                Yearly
+            <div class="d-flex flex-column justify-content-center">
+                <span class="fs-4 px-3">Yearly</span>
                 <span class="fs-6 text-info">(save upto 16%)</span>
-            </Span>
+            </div>
         </div>
         
     </div>
@@ -104,8 +102,10 @@
                 <div class="card-body">
                     <div class="text-center">
                         <h5 class="fs-3 fw-bold card-title">Growth</h5>
-                        <span class="fs-4 fw-bold card-text">$49</span>
-                        <span class="card-text">/month</span>
+                        <div id="growth">                            
+                            <span class="fs-4 fw-bold card-text">$49</span>
+                            <span class="card-text">/month</span>
+                        </div>
                         <hr>
                         <span class="fs-6 fw-bold card-text">+5%</span>
                         <span class="card-text">of the recovered revenue</span>
@@ -153,8 +153,10 @@
                 <div class="card-body">
                     <div class="text-center">
                         <h5 class="fs-3 fw-bold card-title">Pro</h5>
-                        <span class="fs-4 fw-bold card-text">$99</span>
-                        <span class="card-text">/month</span>
+                        <div id="pro">
+                            <span class="fs-4 fw-bold card-text">$99</span>
+                            <span class="card-text">/month</span>
+                        </div>
                         <hr>
                         <!-- <span class="fs-6 fw-bold card-text">+5%</span> -->
                         <span class="card-text">Requires annual commitment</span>
@@ -214,7 +216,7 @@
     ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/pricing_script.js"></script>
 
 </body>
 </html>

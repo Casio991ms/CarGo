@@ -1,0 +1,39 @@
+.bg{
+    background-image: url("https://www.camasys.com//images_camasys/cache/team-work-1600x1000.jpg");
+    background-size: 100% auto;
+    height: 400px;
+    background-color: blue;
+}
+
+.over_image {
+    background-image: url(https://www.camasys.com/templates/camasys/images/rightkiller.png);
+    background-size: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 250px;
+    margin-top: -300px;
+}
+
+.number
+{
+    background-color: #050058; 
+    color:#fff;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding:10px;                        
+}
+
+.desc
+{
+    background-color: #91a8fd;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding:10px;
+}
+
+.service-item{
+    background-color: #fff;
+    padding: 30px 25px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 30%);
+}

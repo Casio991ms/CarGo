@@ -1,4 +1,5 @@
-function viewMoreReviews() {
+function viewMoreReviews() 
+{
     var hiddenReviews = document.querySelector(".hidden-reviews");
 
     var btn = document.querySelector("#view-more-reviews-btn");

@@ -9,13 +9,16 @@
               <a class="nav-link text-light" href="./index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Pricing</a>
+              <a class="nav-link text-light" href="./about.php">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Software Reviews</a>
+              <a class="nav-link text-light" href="./pricing.php">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Our Partners</a>
+              <a class="nav-link text-light" href="./support.php">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./contact">Contact Us</a>
             </li>
           </ul>          
         </div>
@@ -24,10 +27,10 @@
           <h3 class="text-white">Our Products</h3>
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">CarGo Offline</a>
+              <a class="nav-link text-light" href="./Files/CarGo Offline.zip">CarGo Offline</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">CarGo Online</a>
+              <a class="nav-link text-light" href="./menupage.php">CarGo Online</a>
             </li>
           </ul>
         </div>
@@ -45,7 +48,7 @@
               <a class="nav-link text-light" href="#">Privacy Policy</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">About Us</a>
+              <a class="nav-link text-light" href="./about_us.php">About Us</a>
             </li>
           </ul>
         </div>

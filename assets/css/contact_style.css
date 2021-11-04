@@ -1,0 +1,49 @@
+.bg{
+    background-image: url(../images/contact.jpg);
+    background-size: 100% auto;
+    height: 500px;
+    }
+.over_image {
+    background-image: url(https://www.camasys.com/templates/camasys/images/rightkiller.png);
+    background-size: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 250px;
+    margin-top: -300px;
+}
+.contact-box
+{
+    box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 30%);
+    border-radius: 3px;
+    padding:20px;
+    margin: 4%;
+}
+label{
+      background-color: #e5e5e5;
+    color: #1c0000;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.social-icons .social-icon {
+    
+    align-items: center;
+    justify-content: center;
+    height: 3.00rem;
+    width: 3.00rem;
+    background-color: #022c65;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    padding:10px 15px;
+}
+
+.sub1
+{
+    color:#022c65;
+    font-size:20px;
+} 
