@@ -16,6 +16,7 @@ include("../includes/db.php");
    {
       $_SESSION['login']=true;
       $_SESSION['name']=$dat['name'];
+      $_SESSION['userid']=$dat['userid'];
    	  header("Location: ../index.php");
    }
    else

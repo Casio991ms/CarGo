@@ -6,7 +6,7 @@ include("includes/db.php");
 
 
 
-    
+    $uid= $_SESSION['userid']; 
     $warehouse_code=$_POST['warehouse_code'];
     $shop_code=$_POST['shop_code'];
     $location=$_POST['location'];
@@ -16,7 +16,7 @@ include("includes/db.php");
 
 
    
-    $sql="INSERT INTO warehouse values('$warehouse_code','$shop_code','$location','$dealer_name','$rate','$remark')";
+    $sql="INSERT INTO warehouse values('$warehouse_code','$uid','$shop_code','$location','$dealer_name','$rate','$remark')";
 
     if(mysqli_query($conn,$sql))
     {

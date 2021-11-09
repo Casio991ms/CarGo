@@ -4,9 +4,7 @@ include("includes/db.php");
 
 
 
-
-
-    
+$uid= $_SESSION['userid'];  
     $v_no=$_POST['v_no'];
     $drivername=$_POST['driver_name'];
     $v_type=$_POST['v_type'];
@@ -15,7 +13,7 @@ include("includes/db.php");
 
 
    
-    $sql="INSERT INTO vehicle values(NULL,'$v_no','$drivername','$v_type','$v_expenditure','$v_remark')";
+    $sql="INSERT INTO vehicle values(NULL,'$uid','$v_no','$drivername','$v_type','$v_expenditure','$v_remark')";
 
     if(mysqli_query($conn,$sql))
     {

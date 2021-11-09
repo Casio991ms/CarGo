@@ -1,7 +1,8 @@
 <?php
 include("includes/db.php");
 session_start();
-$sql="SELECT * FROM warehouse";
+$uid= $_SESSION['userid'];
+$sql="SELECT * FROM warehouse where uid='$uid'";
 $result=mysqli_query($conn,$sql);
 ?>
 
