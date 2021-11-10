@@ -21,7 +21,9 @@
     <style>
     .careers-top{
         background-image: url(./assets/images/careers.jpg);
-        background-size: 100% auto;
+        /* background-size: 100% auto; */
+        background-position: center;
+        background-size: cover;
         height: 500px;
     }
     </style>
@@ -29,69 +31,101 @@
 </head>
 <body >
 
-  <?php
-    include("includes/header.php");
-  ?>
+    <?php
+      include("includes/header.php");
+    ?>
 
     <!-- Top Image -->
-    <img src="./assets/images/careers.jpg" alt="">
+    <div class="text-center careers-top my-5 position-relative">
+      <p class="text-white fs-1 position-absolute top-50 start-50 translate-middle">Join Our Team</p>
+    </div>
     
-
-   <div class="container-lg text-center my-5">
-    <h1>About Us</h1>
-    <p class="mb-5">
-      -----------<i class="fa fa-star"></i>-----------
-    </p>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="service-item">
-          <img src="./assets/images/history.png" width="260px" height="210px" style="border-radius: 50%;">
-          <p>CarGo was founded in April 2021. The people who founded the company are professionals in their field with a lot of experience and a desire to change and improve things. Long-term experience, that is the basis of the system. The aim is not only to transform existing processes into the digital era.</p>
+    <!-- Why Cargo -->
+    <div class="container-lg mb-5">
+      <div class="row">
+        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+          <h3 class="">Why CarGo</h3>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="service-item">
-            <img src="./assets/images/logo.png" width="280px" height="210px" style="border-radius: 50%;">
-            <p>As the automotive industry evolved, CarGo was quick to accommodate to the new standards. With the objective to solve the many issues rental companies face, our software is now used in countries around the world.The main objective is to develop future business models and strategies</p>
-        </div>
-      </div>        
-    </div>
-  </div>
-
-  <!-- Our Team -->
-  <div class="container-lg text-center mb-5">
-    <h1>Our Team</h1>
-    <p class="mb-5" style="margin-bottom:100px;">-----------<i class="fa fa-star"></i>-----------</p>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="service-item">
-          <img src="./assets/images/onamika.jpg" width="230px" height="230px">
-          <br><br>
-          <h3>Onamika Hossain</h3>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-item">
-            <img src="./assets/images/dhruba.jpg" width="230px" height="230px" >
-            <br><br>
-          <h3>Sadia Tasnim Dhruba</h3>
-
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-item">
-          <img src="./assets/images/nafis.jpg" width="230px" height="230px">
-          <br><br>
-          <h3>Md. Nafis Faiyaz</h3>
+        <div class="col-lg-8">
+          <p>At CarGo, you will work with the world's most talented engineers, designers and thought leaders to shape the future of car renting management.</p>
+          <p>We hail from over 20 countries, speak more than 15 languages, and apply an increadible breadth and depth of experience to our work. Our roster also includes award-winning designers, math geniuses, standup comedians and many more.</p>
         </div>
       </div>
     </div>
-  </div>
 
+    <!-- Benefits -->
+    <div class="container-lg mb-5">
+      <hr class="w-50 mb-5 mx-auto">
+      <h2 class="text-center mb-3">Benefits at CarGo</h2>
+      <div class="row text-center mb-5">
+        <div class="col-lg-4">
+          <div class="card shadow h-100">
+            <i class="fas fa-first-aid fa-5x mt-2"></i>
+            <div class="card-body">
+              <h5 class="card-title">Healthcare</h5>
+              <p class="card-text">Taking care of our team is about more than what happens in the office. We’ve got your healthcare covered so you can work with peace of mind.</p>
+            </div>
+          </div>          
+        </div>
+        <div class="col-lg-4">
+          <div class="card shadow h-100">
+            <i class="fas fa-heartbeat fa-5x mt-2"></i>
+            <div class="card-body">
+              <h5 class="card-title">Wellness</h5>
+              <p class="card-text">With gym memberships, and paid volunteer time, working at Zenefits can help you find your Zen.</p>
+            </div>
+          </div>          
+        </div>
+        <div class="col-lg-4">
+          <div class="card shadow h-100">
+            <i class="fas fa-utensils fa-5x mt-2"></i>
+            <div class="card-body">
+              <h5 class="card-title">Food</h5>
+              <p class="card-text">Catered lunches, snacks, seasonal produce, strong caffeine, and our fully stocked kitchens keeps everyone energized and ready to go.</p>
+            </div>
+          </div>          
+        </div>
+      </div>
+      <div class="row text-center mb-5">
+        <div class="col-lg-4">
+          <div class="card shadow h-100">
+            <i class="fas fa-suitcase-rolling fa-5x mt-2"></i>
+            <div class="card-body">
+              <h5 class="card-title">Vacation</h5>
+              <p class="card-text">We love our work, but we know that taking time off is necessary to maintain a healthy balance. Our generous PTO plan gives you the downtime you need, when you need it.</p>
+            </div>
+          </div>          
+        </div>
+        <div class="col-lg-4">
+          <div class="card shadow h-100">
+            <i class="fas fa-hands-helping fa-5x mt-2"></i>
+            <div class="card-body">
+              <h5 class="card-title">Volunteering</h5>
+              <p class="card-text">All CarGo employees are given paid Volunteer Time Off since we believe work should contribute to our communities.</p>
+            </div>
+          </div>          
+        </div>
+        <div class="col-lg-4">
+          <div class="card shadow h-100">
+            <i class="fas fa-baby-carriage fa-5x mt-2"></i>
+            <div class="card-body">
+              <h5 class="card-title">Family</h5>
+              <p class="card-text">Work should help you lead the life you want--that’s why we provide 12 weeks of fully paid maternity leave and 6 weeks of fully paid paternity leave and have partnered with CLEO for their expert support and guidance.</p>
+            </div>
+          </div>          
+        </div>
+      </div>      
+    </div>
+
+    <!-- Send Your CV -->
+    <div class="container-lg mb-5">
+      <hr class="w-50 mb-5 mx-auto">
+      
+    </div>
   
-  <?php
-    include("includes/footer.php");
-  ?>
+    <?php
+      include("includes/footer.php");
+    ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="assets/js/script.js"></script>

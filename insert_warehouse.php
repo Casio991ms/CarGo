@@ -2,10 +2,6 @@
 session_start();
 include("includes/db.php");
 
-
-
-
-
     $uid= $_SESSION['userid']; 
     $warehouse_code=$_POST['warehouse_code'];
     $shop_code=$_POST['shop_code'];

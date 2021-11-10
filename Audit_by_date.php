@@ -1,8 +1,12 @@
 <?php
-include("includes/db.php");
-session_start();
-
-
+    include("includes/db.php");
+    session_start();
+    $uid= $_SESSION['userid']; 
+    if(!isset($_SESSION['login']))
+    {
+        header("Location: http://localhost/cargo/login&registration/userlogin.php");
+        die();
+    }
 ?>
 <!DOCTYPE HTML>
 
@@ -12,7 +16,10 @@ session_start();
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 <style type="text/css">
@@ -179,41 +186,45 @@ session_start();
     
 }
 
-
 </style>
 <body>
-    <div class="form"><h1>Evaluate Vehicle's Performance</h1></div>
-    <div class="main">
+
+    <?php
+        include("includes/header.php");
+    ?>
+
+    <div class="form my-5"><h1>AUDIT BY DATE</h1></div>
+    <div class="main my-5">
         <form action="Audit_by_date.php" method="POST">
             <h2 class="w_code">Select Vehicle</h2>
-                <select class="vehicle" name="vehicle" id="code">
-                     <option>select a vehicle</option>
+            <select class="vehicle" name="vehicle" id="code">
+                <option>select a vehicle</option>
 
-          <?php
-          $get_vehicle="select * from vehicle";
-          $run_vehicle=mysqli_query($conn,$get_vehicle); 
-          while($row_vehicle=mysqli_fetch_array($run_vehicle))
-          {
-                $v_id=$row_vehicle['v_id'];
-                $v_no=$row_vehicle['v_no'];
-                echo "<option value='$v_id'>$v_no</option>";
-          }
-          ?>
+            <?php
+            $get_vehicle="select * from vehicle where uid='$uid'";
+            $run_vehicle=mysqli_query($conn,$get_vehicle); 
+            while($row_vehicle=mysqli_fetch_array($run_vehicle))
+            {
+                    $v_id=$row_vehicle['v_id'];
+                    $v_no=$row_vehicle['v_no'];
+                    echo "<option value='$v_id'>$v_no</option>";
+            }
+            ?>
                 
-                </select>
-                <h2 class="w_code">Select Start Date</h2>
-                <input class="billdate" type="date" name="billing_date">
+            </select>
+            <h2 class="w_code">Select Start Date</h2>
+            <input class="billdate" type="date" name="billing_date">
 
-                <h2 class="w_code">Select End Date</h2>
-                <input class="billdate" type="date" name="end_date">
+            <h2 class="w_code">Select End Date</h2>
+            <input class="billdate" type="date" name="end_date">
 
-           <div clss="btn">
-            <button type="submit" name="proceed" class="button button1">PROCEED</button></form>
-           <a href="menupage.php"  class="button button2">BACK</a>
+            <div clss="btn">
+                <a href="menupage.php"  class="button button2">BACK</a>
+                <button type="submit" name="proceed" class="button button1">PROCEED</button>
+        </form>
         </div> 
-        </div>
-        
     </div>
+        
      <?php
       if(isset($_POST['proceed']))
       {
@@ -237,40 +248,38 @@ session_start();
   ?>
 
     <table class="table m-5 bg-light">
-            <thead>
-              <th>Vehcile No</th>
-              <th>Chalan No</th>
-              <th>From</th>
-              <th>Destination</th>
-              <th>Date</th>
-              <th>Rent</th>
-              <th>Remark</th>
+        <thead>
+            <th>Vehcile No</th>
+            <th>Chalan No</th>
+            <th>From</th>
+            <th>Destination</th>
+            <th>Date</th>
+            <th>Rent</th>
+            <th>Remark</th>
+            
+            
+        </thead>
+            <tbody>
+            <?php 
+                while($row=mysqli_fetch_assoc($result))
+                {?>
              
-              
-            </thead>
-             <tbody>
-                <?php 
-                 while($row=mysqli_fetch_assoc($result))
-                 {?>
-             
-              <tr>
-                <td><?php echo $row['v_no']?></td>
-                <td><?php echo $row['chalan_no']?></td>
-                <td><?php echo $row['from_warehouse']?></td>
-                <td><?php echo $row['destination']?></td>
-                <td><?php echo $row['billing_date']?></td>
-                <td><?php echo $row['calculated_rant']+$row['extra_charge']?></td>
-                <td><?php echo $row['v_remark']?></td>
-                
-               
-
-              </tr>
+                <tr>
+                    <td><?php echo $row['v_no']?></td>
+                    <td><?php echo $row['chalan_no']?></td>
+                    <td><?php echo $row['from_warehouse']?></td>
+                    <td><?php echo $row['destination']?></td>
+                    <td><?php echo $row['billing_date']?></td>
+                    <td><?php echo $row['calculated_rant']+$row['extra_charge']?></td>
+                    <td><?php echo $row['v_remark']?></td>                   
+                </tr>
 
                 <?php  }
                 ?>
-        </table>
+    </table>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/index_script.js"></script>
 
 </body>
 </html>

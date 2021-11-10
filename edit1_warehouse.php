@@ -14,7 +14,7 @@ include("includes/db.php");
 
 
 
-    $sql="UPDATE warehouse SET warehouse_code='$w_code',shop_code='$shop_code',dealer_name='$dealer_name',rate='$rate',remark='$remark' where warehouse_code='$id'";
+    $sql="UPDATE warehouse SET warehouse_code='$w_code', location='$location', shop_code='$shop_code',dealer_name='$dealer_name',rate='$rate',remark='$remark' where warehouse_code='$id'";
 
 
     if(mysqli_query($conn,$sql))

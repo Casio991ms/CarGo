@@ -1,9 +1,14 @@
 <?php
-include("includes/db.php");
-session_start();
-
-
+    include("includes/db.php");
+    session_start();
+    $uid= $_SESSION['userid']; 
+    if(!isset($_SESSION['login']))
+    {
+        header("Location: http://localhost/cargo/login&registration/userlogin.php");
+        die();
+    }
 ?>
+
 <!DOCTYPE HTML>
 
 <html>
@@ -13,6 +18,9 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 <style type="text/css">
@@ -182,6 +190,11 @@ session_start();
 
 </style>
 <body>
+
+    <?php
+        include("includes/header.php");
+    ?>
+
     <div class="form"><h1>Evaluate Transport Expenditure</h1></div>
     <div class="main">
         <form action="Audit_transport_cost.php" method="POST">
@@ -190,7 +203,7 @@ session_start();
                      <option>select a vehicle</option>
 
           <?php
-          $get_vehicle="select * from vehicle";
+          $get_vehicle="select * from vehicle where uid='$uid'";
           $run_vehicle=mysqli_query($conn,$get_vehicle); 
           while($row_vehicle=mysqli_fetch_array($run_vehicle))
           {
@@ -209,8 +222,8 @@ session_start();
                 <input class="billdate" type="date" name="end_date">
 
            <div clss="btn">
+               <a href="menupage.php"  class="button button2">BACK</a>
             <button type="submit" name="proceed" class="button button1">PROCEED</button></form>
-            <a href="menupage.php"  class="button button2">BACK</a>
         </div> 
         </div>
         
@@ -272,7 +285,8 @@ session_start();
         </table>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/index_script.js"></script>
 
 </body>
 </html>

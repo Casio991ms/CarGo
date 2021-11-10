@@ -14,31 +14,35 @@ include("includes/db.php");
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>CarGo</title>
+  <link rel="shortcut icon" href="assets\images\download.png">
 
-    <title>Hello, world!</title>
-        <style>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/59ad435b01.js" crossorigin="anonymous"></script>
+
+  <style>
 .form-control
 {
- background-color: #d6dcff;
-     border: 1.5px solid #09427c;
+  background-color: #d6dcff;
+  border: 1.5px solid #09427c;
+}
 
+hr
+{
+  color: #0d0f1a;
+  padding: 1.2px;
+}
 
-  }
-  hr
-  {
-    color: #0d0f1a;
-    padding: 1.2px;
-  }
-
-  label{
-      background-color: #d5faff;
+label{
+    background-color: #d5faff;
     color: #080858;
     border-radius: 5px;
     font-weight: bold;
@@ -47,7 +51,7 @@ include("includes/db.php");
 }
 h2
 {
-      font-weight: bold;
+    font-weight: bold;
     color: #06075e;
 }
 .link
@@ -55,19 +59,21 @@ h2
   margin:0 10px;
 }
 
-    </style>
-  </head>
+  </style>
+</head>
   <body style="background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(2 67 147));">
-    <br><br><br>
 
-    <div class="container">
+    <?php
+      include("includes/header.php");
+    ?>
+
+    <div class="container-lg position-relative my-5">
+      <div class="position-absolute top-0 end-0">
+        <a class="text-dark" href="show_all_vehicle.php"><i class="far fa-times-circle fa-2x"></i></a>
+      </div>
+
       <div class="row">
-        <div class="col-md-3">
-          <a class="btn btn-info mb-2" href="show_all_vehicle.php">All vehicle list</a>
-          <br><br><br><br><br>
-          
-        </div>
-        <div class="col-md-9">
+        <div class="col-lg-6 mx-auto">
          
         <?php if(isset($_SESSION['error'])){?>
           <div class="alert alert-warning">
@@ -99,15 +105,15 @@ h2
               <input type="text" class="form-control" name="v_remark" placeholder="Vehicle remark" value="<?php echo $std['v_remark'] ?>">
             </div><br>
                     <br>
-           <button type="submit" class="btn btn-primary">Submit</button><br><br><br><br>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
           </form>
        
         </div>
       </div>
     </div>
-
-   
-
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 

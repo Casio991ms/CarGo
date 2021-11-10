@@ -42,10 +42,10 @@
               <a class="nav-link text-light" href="./about_us.php">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Careers</a>
+              <a class="nav-link text-light" href="./careers.php">Careers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">FAQ</a>
+              <a class="nav-link text-light" href="./faq.php">FAQ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light" href="#">Privacy Policy</a>
