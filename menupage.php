@@ -55,7 +55,7 @@
                 <div class="card h-100">
                     <img src="IMAGES_WEB\11.jpg" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title"> ADD NEW WARE HOUSE</h5>
+                        <h5 class="card-title"> ADD NEW WAREHOUSE</h5>
                         <p class="card-text">Add details of your ware house to save for<br>future use.</p>
                         <a href="Add_warehouse.php" class="btn btn-success">ADD<i class="fa fa-chevron-right mx-1" aria-hidden="true"></i></a>
                     </div>
