@@ -118,10 +118,16 @@
     </div>
 
     <!-- Send Your CV -->
-    <div class="container-lg mb-5">
+    <!-- <div class="container-lg mb-5">
       <hr class="w-50 mb-5 mx-auto">
-      
-    </div>
+      <p class="text-center fw-bold fs-1">Send Us Your CV</p>
+      <div class="row text-center">
+        <form action="careers.php" method="post" enctype="multipart/form-data">
+          <input type="file" class="col-3" name="file">
+          <button type="submit" class="btn btn-secondary mb-3 col-1" name="submit">Upload</button>
+        </form>
+      </div>
+    </div> -->
   
     <?php
       include("includes/footer.php");
